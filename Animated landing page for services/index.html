@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaBoost</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#home" class="logo">NovaBoost</a>
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section container">
+            <div class="hero-content" data-aos="fade-right">
+                <h1 class="hero-title">NovaBoost</h1>
+                <p class="hero-subtitle">Revolutionize your team's productivity with AI</p>
+                <a href="#pricing" class="cta-button">Get Started</a>
+            </div>
+            <div class="hero-image" data-aos="fade-left">
+                <img src="Images/Hero-img3.jpg" alt="AI Productivity Illustration">
+            </div>
+        </section>
+
+        <section id="features" class="features-section container">
+            <h2 class="section-title" data-aos="fade-up">Find the right feature for you</h2>
+            <div class="feature-filter" data-aos="fade-up" data-aos-delay="100">
+                <label for="feature-select">Filter by category:</label>
+                <select id="feature-select">
+                    <option value="all">All Features</option>
+                    <option value="automation">Smart Automation</option>
+                    <option value="analytics">Real-Time Analytics</option>
+                    <option value="collaboration">Team Collaboration</option>
+                </select>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-feature="automation" data-aos="fade-up">
+                    <img src="Images/automation2.png" alt="Automation Icon" class="feature-icon">
+                    <h3>Smart Automation</h3>
+                    <p>Automate repetitive tasks and workflows with our intelligent AI engine.</p>
+                </div>
+                <div class="feature-card" data-feature="analytics" data-aos="fade-up" data-aos-delay="100">
+                    <img src="Images/analytics.png" alt="Analytics Icon" class="feature-icon">
+                    <h3>Real-Time Analytics</h3>
+                    <p>Gain actionable insights from your data with our dynamic dashboards.</p>
+                </div>
+                <div class="feature-card" data-feature="collaboration" data-aos="fade-up" data-aos-delay="200">
+                    <img src="Images/teamwork.png" alt="Collaboration Icon" class="feature-icon">
+                    <h3>Team Collaboration</h3>
+                    <p>Enhance teamwork with shared workspaces and seamless communication.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing-section container">
+            <h2 class="section-title" data-aos="fade-up">Choose Your Plan</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Free</h3>
+                    <p class="price">$0<span>/month</span></p>
+                    <ul>
+                        <li>✓ 1 User</li>
+                        <li>✓ Basic AI Automation</li>
+                        <li>✓ 1GB Storage</li>
+                        <li>✗ Priority Support</li>
+                    </ul>
+                    <a href="#" class="btn-choose">Choose Plan</a>
+                </div>
+                <div class="pricing-card highlighted" data-aos="fade-up">
+                    <span class="popular-badge">Most Popular</span>
+                    <h3>Pro</h3>
+                    <p class="price">$29<span>/month</span></p>
+                    <ul>
+                        <li>✓ 10 Users</li>
+                        <li>✓ Advanced AI Automation</li>
+                        <li>✓ 50GB Storage</li>
+                        <li>✓ Priority Support</li>
+                    </ul>
+                    <a href="#" class="btn-choose">Choose Plan</a>
+                </div>
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Enterprise</h3>
+                    <p class="price">Contact Us</p>
+                    <ul>
+                        <li>✓ Unlimited Users</li>
+                        <li>✓ Custom AI Models</li>
+                        <li>✓ Unlimited Storage</li>
+                        <li>✓ Dedicated Support</li>
+                    </ul>
+                    <a href="#" class="btn-choose">Choose Plan</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section">
+            <div class="container" data-aos="fade-up">
+                <h2 class="section-title">What Our Users Say</h2>
+                <div class="swiper testimonials-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <blockquote>"NovaBoost has tripled our team's efficiency. The automation features are a game-changer!"</blockquote>
+                                <cite>
+                                    <span class="user-name">Sarah Johnson</span>
+                                    <span class="user-role">Project Manager, TechCorp</span>
+                                </cite>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <blockquote>"The analytics dashboard provides incredible insights that we never had before. Highly recommended."</blockquote>
+                                <cite>
+                                    <span class="user-name">David Chen</span>
+                                    <span class="user-role">Data Analyst, Innovate LLC</span>
+                                </cite>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <blockquote>"A seamless collaboration tool that integrates perfectly with our existing workflow. Our team loves it."</blockquote>
+                                <cite>
+                                    <span class="user-name">Maria Garcia</span>
+                                    <span class="user-role">CEO, Creative Solutions</span>
+                                </cite>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section container">
+            <div class="contact-content" data-aos="zoom-in">
+                <h2 class="section-title">Get Early Access</h2>
+                <p>Join our waitlist and be the first to know when we launch.</p>
+                <form id="signup-form" class="signup-form" novalidate>
+                    <div class="input-group">
+                        <input type="email" id="email-input" placeholder="Enter your email" required>
+                        <button type="submit" class="btn-subscribe">Subscribe</button>
+                    </div>
+                    <p id="form-message" class="form-message"></p>
+                </form>
+                <button id="dark-mode-toggle" class="dark-mode-toggle">Toggle Dark Mode</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <p>© 2025 NovaBoost. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
